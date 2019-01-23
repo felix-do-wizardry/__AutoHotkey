@@ -1,0 +1,7 @@
+﻿AutoHotkey is created by Chris Mallett and Lexikos, with portions by AutoIt Team and various AHK community members. It is licensed under GNU General public license.
+
+You can get the source code and other relevant information at:
+	https://github.com/Lexikos/AutoHotkey_L
+	http://ahkscript.org/
+	http://www.autohotkey.com/
+	http://www.autohotkey.com/forum/topic34070.html

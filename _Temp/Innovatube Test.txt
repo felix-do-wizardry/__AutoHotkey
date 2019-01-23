@@ -1,0 +1,10 @@
+class Solution {
+	public int solution(int[] A) {
+		int N = A.length;
+		int r = 1;
+		for (int i = 0; i < N; i++) {
+			r += i + 2 - A[i];
+		}
+		return r;
+	}
+}
