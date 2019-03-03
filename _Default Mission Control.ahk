@@ -43,7 +43,6 @@ return
 
 ;--------------------------------------------------------- Launcher
 
-
 +!F1::
 WinMove, A, , 200, 200, , 
 return
@@ -113,6 +112,29 @@ return
 
 #+F1::run %cd%.\Shortcuts\AutoHotkey
 #+F2::run %cd%.\Shortcuts\AU3_Spy
+
+#+w::
+ubuntu_ssh:
+SendRaw, ssh -p 48248 haidn@42.113.206.201
+; SendRaw, hai@123
+return
+
+#+x::
+SendInput, #{x}
+Sleep, 100
+SendInput, {a}
+WinWait, PowerShell, , 3
+Sleep, 400
+Gosub, ubuntu_ssh
+Sleep, 400
+SendInput, {Enter}
+Sleep, 400
+SendRaw, hai@123
+Sleep, 400
+SendInput, {Enter}
+Sleep, 200
+SendInput, clear{Enter}
+return
 
 
 #+a::
@@ -505,6 +527,18 @@ return
 
 
 #If alphaMod = 1
+
+
+
+$1::
+; SetToolTip("got here?")
+; copy program name
+WinGetTitle, title, A
+SetToolTip(title, 2000)
+Sleep, 200
+clipboard = %title%
+return
+
 
 return
 SendInput, {RButton}
