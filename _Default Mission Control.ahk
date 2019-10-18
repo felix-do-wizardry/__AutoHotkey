@@ -149,7 +149,7 @@ return
 ^+F10::WinMove, A, , 1366-496+8, -12, 496, 1200
 
 ; ------ Program Specific Scripts
-#+s::
+; #+s::
 #+g::
 if paused = True:
 	return
@@ -230,14 +230,14 @@ return
 
 ; ------------ Raspberry Pi Hotkeys
 
-#![::rasp_pi_putty(pi_id_0)
-#!]::rasp_pi_putty(pi_id_1)
+; #![::rasp_pi_putty(pi_id_0)
+; #!]::rasp_pi_putty(pi_id_1)
 
-#+[::rasp_pi_remote(pi_id_0)
-#+]::rasp_pi_remote(pi_id_1)
+; #+[::rasp_pi_remote(pi_id_0)
+; #+]::rasp_pi_remote(pi_id_1)
 
-#+,::rasp_pi_mosq_sub(pi_id_0)
-#+.::rasp_pi_mosq_pub(pi_id_0)
+; #+,::rasp_pi_mosq_sub(pi_id_0)
+; #+.::rasp_pi_mosq_pub(pi_id_0)
 
 ; #+[::rasp_pi_remote(106, 103)
 ; #+]::rasp_pi_remote(117, 103)
