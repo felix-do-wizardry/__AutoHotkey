@@ -164,15 +164,17 @@ IfWinActive, StarCraft II
 }
 IfWinActive, Visual Studio Code
 {
-	; SetToolTip("doing it right", 2000)
+	SetToolTip("committing staged changes", 2000)
 	GetTimeStamp(True)
-	SendInput, ^+{g}q
-	Sleep, 100
-	SendInput, {Enter}
+	SendInput, ^+{g}^+{s}
+	; Sleep, 100
+	; SendInput, {Enter}
 	; SetToolTip("",0)
 	Sleep, 400
 	SendInput, ^{v}{Enter}
-	SendInput, ^+{g}w
+	Sleep, 100
+	SendInput, ^+{g}^+{w}
+	return
 	; Sleep, 100
 	; SendInput, {Enter}
 	; Sleep, 1000
