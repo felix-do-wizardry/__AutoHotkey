@@ -174,7 +174,7 @@ IfWinActive, Visual Studio Code
 	SendInput, ^{v}{Enter}
 	clipboard := "felix-do-wizardry"
 	Sleep, 100
-	SendInput, ^+{g}^+{w}
+	SendInput, ^+{g}^+{w}felix-do-wizardry
 	Sleep, 200
 	return
 	SendInput, ^{v}{Enter}
