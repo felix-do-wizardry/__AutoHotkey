@@ -172,12 +172,14 @@ IfWinActive, Visual Studio Code
 	; SetToolTip("",0)
 	Sleep, 400
 	SendInput, ^{v}{Enter}
+	clipboard := "felix-do-wizardry"
 	Sleep, 100
 	SendInput, ^+{g}^+{w}
-	return
-	; Sleep, 100
-	; SendInput, {Enter}
-	; Sleep, 1000
+	Sleep, 200
+	SendInput, ^{v}{Enter}
+	clipboard := "bcc476e523c0eb9b4337d41649c46dd505e44fd6"
+	Sleep, 400
+	SendInput, ^{v}{Enter}
 	paused := False
 	return
 }
