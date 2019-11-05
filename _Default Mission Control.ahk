@@ -176,6 +176,7 @@ IfWinActive, Visual Studio Code
 	Sleep, 100
 	SendInput, ^+{g}^+{w}
 	Sleep, 200
+	return
 	SendInput, ^{v}{Enter}
 	clipboard := "bcc476e523c0eb9b4337d41649c46dd505e44fd6"
 	Sleep, 400
